@@ -1,121 +1,91 @@
-body{
+body {
     background-color: #1B1A55;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .stars {
     width: 100%;
 }
 
-h1{
-    color: #9290C3;
-}
-
-.title-1{
+.title-1,
+.title-2,
+.moon,
+.div-hello,
+.div-about-me,
+.my-photo,
+.div-my-skills,
+.skills1,
+.in_touch,
+.bottom_container {
     display: flex;
     justify-content: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    align-items: center;
+    width: 100%;
 }
-h1{
+
+h1 {
+    color: #9290C3;
     font-family: "Sacramento", cursive;
     font-size: 80px;
-    margin: 0%;
-    grid-column: span 3;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
 }
 
-.title-2{
-    display: flex;
-    justify-content: center;
-    grid-column: span 3;
- 
-}
-
-h2{
+h2 {
     color: #9290C3;
     font-size: 30px;
     font-family: "Sacramento", cursive;
     font-weight: 100;
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
 }
 
-
-
-
-img{
+.moon-photo {
     width: 410px;
 }
 
-
-.moon{
-    display: flex;
-    justify-content: center;
-
-}
-
-h3{
-    display: flex;
-    justify-content: center;
+h3 {
     font-size: 30px;
     font-family: "Sacramento", cursive;
     font-weight: 100;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     color: aliceblue;
+    text-align: center;
 }
 
-.about-me{
+.about-me {
     width: 30%;
-    margin: auto;
     text-align: center;
     color: aliceblue;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
-
 }
 
-.my-photo{
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-}
-
-.my-photo > img{
+.my-photo img {
     border-radius: 50%;
     width: 300px;
 }
 
-
-
 .skills1 {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-  
+
 .content-container {
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-top: 50px;
 }
 
-  
 .content-container img {
-    margin-right: 20px; 
+    margin-right: 20px;
     width: 300px;
 }
 
-.txt1 p{
+.txt1 p {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -123,37 +93,10 @@ h3{
     width: 300px;
 }
 
-
-@media only screen and (max-width: 600px) {
-    .txt1 p {
-        width: auto; 
-        max-width: 100%; 
-        text-align: center; 
-    }
-
-    .content-container {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    .content-container img {
-        margin-right: 0; 
-        margin-bottom: 20px; 
-        width: 80%; 
-        max-width: 300px; 
-    }
-
-    h1{
-        font-size: 50px;
-    }
-
-   
-    
+.in_touch {
+    margin: 70px 0;
 }
 
-.in_touch{
-    margin: 70px;
-}
 .btn {
     display: block;
     margin: 0 auto;
@@ -163,13 +106,15 @@ h3{
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
-    
-  }
-
-.bottom_container{
-   background-color: aliceblue;
 }
-  
+
+.bottom_container {
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .LI {
     display: block;
     margin: 30px;
@@ -179,7 +124,44 @@ h3{
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
-
 }
 
+@media only screen and (max-width: 600px) {
+    .txt1 p {
+        width: auto;
+        max-width: 100%;
+        text-align: center;
+    }
 
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-container img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .moon {
+        width: 300px;
+    }
+
+    .moon-photo {
+        width: 200px;
+    }
+
+    .title-1, .title-2, .div-hello, .div-about-me, .my-photo, .div-my-skills, .skills1 {
+        width: 300px;
+    }
+
+    .my-photo img {
+        width: 200px;
+    }
+}
