@@ -1,3 +1,17 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #1B1A55;
     display: flex;
@@ -23,6 +37,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -42,7 +58,8 @@ h2 {
 }
 
 .moon-photo {
-    width: 410px;
+    width: 100%;
+    max-width: 410px;
 }
 
 h3 {
@@ -56,7 +73,8 @@ h3 {
 }
 
 .about-me {
-    width: 30%;
+    width: 100%;
+    max-width: 600px;
     text-align: center;
     color: aliceblue;
     font-family: "Roboto", sans-serif;
@@ -67,7 +85,8 @@ h3 {
 
 .my-photo img {
     border-radius: 50%;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .skills1 {
@@ -78,11 +97,14 @@ h3 {
     display: flex;
     align-items: center;
     margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content-container img {
     margin-right: 20px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .txt1 p {
@@ -90,7 +112,9 @@ h3 {
     font-style: normal;
     font-weight: 100;
     color: aliceblue;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
 }
 
 .in_touch {
@@ -158,7 +182,8 @@ h3 {
     }
 
     .title-1, .title-2, .div-hello, .div-about-me, .my-photo, .div-my-skills, .skills1 {
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
     }
 
     .my-photo img {
